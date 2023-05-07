@@ -25,3 +25,7 @@ const html = readFileSync('index.html')
 posthtml([ include({ encoding: 'utf8' }) ])
   .process(html)
   .then((result) => console.log(result.html));
+
+  // Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap'
+import * as fontawesome from '@fortawesome/fontawesome-free/css/all.css'

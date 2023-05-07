@@ -97,14 +97,19 @@ hr {
   margin-bottom: 1em;
 }
 
-button {
-  border: 0;
-  background-color: $color-fondo-body;
-  color: $color-principal;
-  text-transform: uppercase;
-  font-size: 100%;
-  padding: 1em 2em;
-  position: absolute;
-  right: 1em;
-  bottom: 1em;
+a:link,
+a:visited {
+  background-color: white;
+  color: $color-texto-fondo-oscuro;
+  border: 2px solid $color-fondo-boton;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: $color-fondo-boton;
+  color: white;
 }

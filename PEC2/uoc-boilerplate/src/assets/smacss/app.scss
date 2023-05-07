@@ -8,3 +8,9 @@
 @import "3-modules/modules-dir";
 @import "4-states/states-dir";
 @import "5-themes/themes-dir";
+
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+// Import all of FontAwesome's CSS
+@import "@fortawesome/fontawesome-free/scss/fontawesome";

@@ -8,7 +8,11 @@
     "no-empty-source": null,
     "declaration-block-no-redundant-longhand-properties": [
       true,
-      { "ignoreShorthands": ["grid-template"] }
-    ]
+      {
+        "ignoreShorthands": ["grid-template"]
+      }
+    ],
+    "scss/no-global-function-names": null,
+    "media-feature-range-notation": null
   }
 }

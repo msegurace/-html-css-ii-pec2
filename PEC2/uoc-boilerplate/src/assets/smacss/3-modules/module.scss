@@ -1,48 +1,133 @@
-.logo {
-  grid-column: 1;
+@supports (display: grid) {
+  .logo {
+    grid-column: 1;
+  }
+
+  .column2 {
+    grid-column: 2;
+  }
+
+  .column3 {
+    grid-column: 3;
+  }
+
+  .column4 {
+    grid-column: 4;
+  }
+
+  .column5 {
+    grid-column: 5;
+  }
+
+  .column6 {
+    grid-column: 6;
+  }
+
+  .imageportada {
+    grid-row: 1 / -1;
+    grid-column: 5;
+    text-align: right;
+  }
+
+  .textoportada {
+    grid-row: 2;
+    grid-column: 1 / 4;
+    font-size: medium;
+    text-align: justify;
+  }
+
+  .sede {
+    grid-row: 3;
+    grid-column: 1;
+    text-align: right;
+  }
+
+  .campeonatos {
+    grid-row: 3;
+    grid-column: 4;
+    text-align: right;
+  }
+
+  .unete {
+    grid-row: 3;
+    grid-column: 5;
+    text-align: right;
+  }
+
+  .sede,
+  .campeonatos,
+  .unete {
+    > a {
+      font-size: large;
+    }
+
+    > a:link,
+    > a:visited {
+      background-color: $color-contraste;
+      color: $color-texto;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    > a:hover,
+    > a:active {
+      background-color: $color-fondo-boton;
+      color: white;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sede,
+    .campeonatos,
+    .unete {
+      display: inline-block;
+    }
+  }
 }
 
-.column2 {
-  grid-column: 2;
+.member-page-container {
+  max-width: $layout-with;
+  margin: 50 auto;
 }
 
-.column3 {
-  grid-column: 3;
+.member-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+  margin: 0 auto;
 }
 
-.column4 {
-  grid-column: 4;
+.member-card {
+  box-shadow: 0 4px 8px 0 black;
+  transition: 0.3s;
+  width: 300px;
+  border-radius: 5px;
+  text-align: center;
 }
 
-.column5 {
-  grid-column: 5;
+.member-card:hover {
+  box-shadow: 0 8px 16px 0 black;
 }
 
-.column6 {
-  grid-column: 6;
+.member-card > picture {
+  border-radius: 5px;
 }
 
-.textoportada {
-  grid-row: 2;
-  grid-column: 2 / -1;
+.member-name {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.sede {
-  grid-row: 4;
-  grid-column: 2;
-  text-align: right;
+.member-text {
+  font-size: 1rem;
 }
 
-.campeonatos {
-  grid-row: 4;
-  grid-column: 3;
-  text-align: right;
-}
-
-.unete {
-  grid-row: 4;
-  grid-column: 4;
-  text-align: right;
+.member-buttons button {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  margin: 10px;
 }
 
 .portada {
@@ -73,171 +158,4 @@
   padding: 60px 0 16px;
   margin: 0 auto;
   text-transform: none;
-}
-
-.footer-menu {
-  display: table-cell;
-  text-align: right;
-}
-
-.footer-menu ul {
-  list-style-type: none;
-}
-
-.footer-menu li {
-  display: inline-block;
-  color: $color-texto;
-  font-weight: 600;
-}
-
-.footer-menu a {
-  color: $color-texto;
-  font-size: 1.3rem;
-  padding: 1rem;
-  text-decoration: none;
-}
-
-.footer-menu ul li a.link-active {
-  font-weight: 900;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: $color-texto;
-}
-
-.footer-menu .active {
-  color: $color-texto-fondo-oscuro;
-}
-
-.footer-menu-left {
-  clear: both;
-  display: inline-block;
-  margin-top: 40px;
-}
-
-.biografia {
-  display: flex;
-  flex-flow: row wrap;
-  text-align: center;
-  max-width: $layout-with;
-  gap: 10px;
-  margin: 0 auto 40px;
-}
-
-.biografia p {
-  font-size: 1.5rem;
-  text-align: justify;
-}
-
-.biografia a {
-  flex: 1;
-  text-decoration: none;
-  color: $color-texto-fondo-oscuro;
-}
-
-.biografia a:visited {
-  text-decoration: none;
-}
-
-.biografia a:hover {
-  color: $color-principal;
-  opacity: 0.5;
-}
-
-.biografia img {
-  margin: 0 auto;
-}
-
-.biografia figure figcaption {
-  font-size: 1rem;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.alumno-asig {
-  display: table-row;
-}
-
-.alumno {
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  text-align: left;
-  font-weight: 400;
-}
-
-.galeria-fotos {
-  text-align: center;
-  display: flex;
-  flex-flow: wrap;
-  flex-direction: row;
-  max-width: $layout-with;
-  margin: 0 auto;
-  justify-content: space-around;
-}
-
-.galeria-fotos figure {
-  padding-top: 20px;
-}
-
-.galeria-fotos figure figcaption {
-  text-align: center;
-}
-
-.enlaces {
-  display: flex;
-  flex-flow: row wrap;
-  max-width: 1000px;
-  gap: 10px;
-  margin: 0 auto 40px;
-}
-
-dt {
-  font-size: 2.5rem;
-  color: $color-principal;
-  font-weight: 700;
-}
-
-dd {
-  color: $color-principal;
-  font-size: 1.9rem;
-  margin-left: 0;
-  padding-bottom: 20px;
-}
-
-.mapa {
-  width: $layout-with;
-}
-
-@media screen and (max-width <= 830px) {
-  .portada {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 31px;
-    text-align: center;
-  }
-
-  .portada img {
-    max-width: 470;
-    margin: 0 auto;
-  }
-
-  .galeria-fotos picture img {
-    max-width: 450px;
-  }
-
-  .alumn-asig {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .alumno {
-    text-align: center;
-  }
-
-  .mapa {
-    width: 100%;
-  }
 }

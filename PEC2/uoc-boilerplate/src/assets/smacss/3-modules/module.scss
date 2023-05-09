@@ -159,3 +159,21 @@
   margin: 0 auto;
   text-transform: none;
 }
+
+.list-piezas > li {
+  font-size: 2rem;
+  list-style-type: none;
+  position: relative;
+}
+
+.list-piezas > li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}

@@ -28,4 +28,5 @@ posthtml([ include({ encoding: 'utf8' }) ])
 
   // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
+
 import * as fontawesome from '@fortawesome/fontawesome-free/css/all.css'

@@ -29,6 +29,7 @@
       }
 
       > header > hr {
+        border-top: 5px solid $color-fondo-boton;
         grid-column: 1 / -1;
       }
 

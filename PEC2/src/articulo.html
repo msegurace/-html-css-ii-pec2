@@ -1,0 +1,93 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./assets/smacss/app.scss">
+  <title>PEC 2 - Moisés Segura Cedrés</title>
+</head>
+
+<body>
+  <div id="app">
+    <include src="./src/views/header.html"></include>
+    <main>
+      <article>
+        <section>
+          <div class="container">
+            <h1>Breves reseñas del juego</h1>
+            <figure>
+              <img src="./assets/images/grancanariaChess.png" alt="Gran Canaria ajedrez">
+              <figcaption>
+                Club de ajedrez Gran Canaria
+              </figcaption>
+            </figure>
+            <div>
+              <h2>¿Qué es el ajedrez?</h2>
+              <p>
+                El ajedrez es un juego de estrategia y habilidad que ha sido practicado por siglos en todo el mundo.
+                Para
+                poder jugar al ajedrez, es necesario conocer las reglas básicas que rigen el juego. A continuación, se
+                describen las reglas de ajedrez más importantes.</p>
+            </div>
+            <blockquote>
+              <p>El ajedrez es uno de los medios que tenemos para salvar la cultura, como el latín, el estudio de las
+                humanidades, la lectura de los clásicos, las leyes de la versificación, la ética. El ajedrez es hoy
+                reemplazado por el fútbol, el boxeo o el tenis, que son juegos de insensatos, no de intelectuales.</p>
+              <cite>Jorge Luis Borges</cite>
+            </blockquote>
+
+            <h2>El tablero</h2>
+            <p>El tablero de ajedrez es un cuadrado de 8x8 casillas, que se alternan entre colores claros y oscuros. El
+              juego se juega con 16 piezas por jugador, incluyendo un rey, una reina, dos torres, dos caballos, dos
+              alfiles y ocho peones. Cada pieza tiene un movimiento único, lo que hace que cada una de ellas tenga un
+              valor diferente.</p>
+            <figure>
+              <img src="./assets/images/tablero.jpg" alt="Tablero de ajedrez">
+              <figcaption>
+                Juego de ajedrez sobre el tablero
+              </figcaption>
+            </figure>
+            <h2>Movimientos de las piezas</h2>
+            <ul class="list-piezas">
+              <li><i class="fa-solid fa-chess-pawn"></i> Peón: <p>El movimiento del peón es el más limitado en el
+                  ajedrez.
+                  Los peones solo pueden moverse hacia adelante, pero solo pueden capturar una pieza diagonalmente.
+                  Además, si un peón llega a la última fila del tablero, se puede convertir en cualquier otra pieza
+                  excepto un rey o una reina.</p>
+              </li>
+              <li><i class="fa-solid fa-chess-knight"></i> Caballo: <p>Es la única pieza que puede saltar sobre otras
+                  piezas
+                  y tiene un movimiento en forma de L.</p>
+              </li>
+              <li><i class="fa-solid fa-chess-rook"></i> Torre: <p>La torre se mueve en línea recta en cualquier
+                  dirección.</p>
+              </li>
+              <li><i class="fa-solid fa-chess-bishop"></i> Álfil: <p>El alfil se mueve en diagonal en cualquier
+                  dirección.
+                </p>
+              </li>
+              <li><i class="fa-solid fa-chess-queen"></i> Reina: <p>La reina es la pieza más poderosa y puede moverse
+                  en
+                  cualquier dirección en línea recta o diagonal.</p>
+              </li>
+              <li><i class="fa-solid fa-chess-king"></i> Rey: <p>es la pieza más importante del juego y solo puede
+                  moverse
+                  una casilla en cualquier dirección. El rey nunca puede moverse a una casilla donde esté en jaque. Si
+                  el
+                  rey está en jaque y no hay ninguna forma de escapar del jaque, el jugador pierde la partida.</p>
+              </li>
+            </ul>
+            <figure>
+              <img src="./assets/images/carr3.jpg" alt="Tablero de ajedrez">
+              <figcaption>
+                Juego de ajedrez sobre el tablero
+              </figcaption>
+            </figure>
+          </div>
+      </article>
+      </section>
+    </main>
+    <include src="./src/views/footer.html"></include>
+    <article></article>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>

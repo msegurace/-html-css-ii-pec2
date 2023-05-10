@@ -1,0 +1,184 @@
+@supports (display: grid) {
+  .logo {
+    grid-column: 1;
+  }
+
+  .column2 {
+    grid-column: 2;
+  }
+
+  .column3 {
+    grid-column: 3;
+  }
+
+  .column4 {
+    grid-column: 4;
+  }
+
+  .column5 {
+    grid-column: 5;
+  }
+
+  .column6 {
+    grid-column: 6;
+  }
+
+  .imageportada {
+    grid-row: 1 / -1;
+    grid-column: 5;
+    text-align: right;
+  }
+
+  .textoportada {
+    grid-row: 2;
+    grid-column: 1 / 4;
+    font-size: medium;
+    text-align: justify;
+  }
+
+  .sede {
+    grid-row: 3;
+    grid-column: 1;
+    text-align: right;
+  }
+
+  .campeonatos {
+    grid-row: 3;
+    grid-column: 4;
+    text-align: right;
+  }
+
+  .unete {
+    grid-row: 3;
+    grid-column: 5;
+    text-align: right;
+  }
+
+  .sede,
+  .campeonatos,
+  .unete {
+    > a {
+      font-size: large;
+    }
+
+    > a:link,
+    > a:visited {
+      background-color: $color-contraste;
+      color: $color-texto;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    > a:hover,
+    > a:active {
+      background-color: $color-fondo-boton;
+      color: white;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .sede,
+    .campeonatos,
+    .unete {
+      display: inline-block;
+    }
+  }
+}
+
+.member-page-container {
+  max-width: $layout-with;
+  margin: 50 auto;
+}
+
+.member-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.member-card {
+  box-shadow: 0 4px 8px 0 black;
+  transition: 0.3s;
+  width: 300px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.member-card:hover {
+  box-shadow: 0 8px 16px 0 black;
+}
+
+.member-card > picture {
+  border-radius: 5px;
+}
+
+.member-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.member-text {
+  font-size: 1rem;
+}
+
+.member-buttons button {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  margin: 10px;
+}
+
+.portada {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  max-width: $layout-with;
+  margin: 0 auto;
+}
+
+.portada figure figcaption {
+  text-align: center;
+}
+
+.portada p {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.portada h1 {
+  display: block;
+  font-size: calc(3.5rem + 1vw);
+  font-weight: 900;
+  text-align: center;
+  padding: 60px 0 16px;
+  margin: 0 auto;
+  text-transform: none;
+}
+
+.list-piezas > li {
+  font-size: 2rem;
+  list-style-type: none;
+  position: relative;
+}
+
+.list-piezas > li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.util-page-container {
+  width: $layout-with;
+  margin: 0 auto;
+}

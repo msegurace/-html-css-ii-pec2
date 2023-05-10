@@ -1,0 +1,40 @@
+/*
+  Tamaños
+*/
+$layout-with: 1000px;
+
+/*
+    COLORES
+*/
+$color-texto-fondo-oscuro: #2a2a2a;
+$color-texto: #fcfcfc;
+$color-principal: #79baab;
+$color-principal-light: #c5e1db;
+$color-contraste: #dc4a23;
+$color-contraste-light: #eb9781;
+$color-fondo-body: #fff7e8;
+$color-fondo-boton: #806600;
+
+/* 
+Bootstrap
+*/
+// Required
+@import "../../../node_modules/bootstrap/scss/functions";
+
+// Required
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/maps";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/root";
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "primary": #0421fe,
+    "border-primary": $color-fondo-boton,
+  )
+);
+
+// Default variable overrides
+$body-bg: #fff7e8;
+$body-color: #79baab;
